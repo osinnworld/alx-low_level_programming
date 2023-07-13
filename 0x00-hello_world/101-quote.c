@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - Program doesn/t use puts and print
+ * main - Entry point of the program
  *
- * Return: 1 
+ * Return: 1 (FAILURE)
  */
 int main(void)
 {
@@ -16,4 +16,3 @@ int main(void)
 
 	return (1);
 }
-
