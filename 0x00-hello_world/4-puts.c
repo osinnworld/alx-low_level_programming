@@ -1,13 +1,12 @@
 #include <stdio.h> 
 
 /**
- * prints out output using puts
+ * main -prints out output using puts
  * 
- * returns: (0)
- *
+ * description -print out
  */
 
-int main() 
+int main(void) 
 {
 	puts("\"Programming is like building a multilingual puzzle"); 
 	
