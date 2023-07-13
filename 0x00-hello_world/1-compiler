@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp $CFILE > main.o
+gcc $CFILE -o main.o
