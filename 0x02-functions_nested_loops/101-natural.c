@@ -8,19 +8,15 @@
  */
 int main(void)
 {
-    int start = 1, end = 1023, sum1 = 0, num1;
+	int i, sum = 0;
 
-    if (start % 3 == 0 || start % 5 == 0)
-    {
-        start++;
-    }
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
+	}
 
-    for (num1 = start; num1 <= end; num1 += 1)
-    {
-        sum1 += num1;
-    }
+	printf("%d\n", sum);
 
-    printf("The sum of natural numbers between 1-1023 is: %d", sum1);
-
-    return 0;
+	return (0);
 }
