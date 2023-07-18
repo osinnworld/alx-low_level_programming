@@ -1,27 +1,32 @@
 #include <stdio.h>
-
 /**
- * main - Prints Fibonacci numbers.
- *
- * Return: Always 0.
+ * main - main block
+ * 
+ * Return: Always 0
  */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int count = 2;
+	long int i = 1, j = 2;
+	long int k;
 
-	printf("%lu, %lu", fib1, fib2);
-
-	for (count = 0; count < 50; count++)
+	printf("%lu, ", i);
+	while (count <= 50)
 	{
-		sum = fib1 + fib2;
-		printf(", %lu", sum);
+		if (count == 50)
+		{
+			printf("%lu\n", j);
+		}
+		else
+		{
+			printf("%lu, ", j);
+		}
 
-		fib1 = fib2;
-		fib2 = sum;
+		k = j;
+		j += i;
+		i = k;
+		count++;
 	}
-
-	printf("\n");
 
 	return (0);
 }
