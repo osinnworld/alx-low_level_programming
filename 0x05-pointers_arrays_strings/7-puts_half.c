@@ -1,46 +1,35 @@
+#include <stdio.h>
 #include "main.h"
 
-/* Function prototypes */
-void puts_half(char *str);
-int _strlen(char *s);
-
 /**
- * puts_half - Prints the second half of a string.
- * @str: The input string.
- * Return: void.
+ * puts_half - prints a string
+ * @str: string to print
+ *
+ * Return: nothing
  */
+
 void puts_half(char *str)
 {
-    int len = _strlen(str);
+	int i, len = _strlen(str);
 
-    if (len % 2 == 0)
-        len = len / 2;
-    else
-        len = (len + 1) / 2;
-
-    while (str[len] != '\0')
-    {
-        _putchar(str[len]);
-        len++;
-    }
-
-    _putchar('\n');
+	for (i = ((len - 1) / 2) + 1; i < len; i++)
+		putchar(*(str + i));
+	putchar(10);
 }
 
 /**
- * _strlen - Returns the length of a string.
- * @s: The input string.
- * Return: Length of the string.
- */
+* _strlen - returns the length of a string
+* @s: string
+*
+* Return: the length of the given string
+*/
+
 int _strlen(char *s)
 {
-    int count, inc;
-    inc = 0;
+	int len = 0;
 
-    for (count = 0; s[count] != '\0'; count++)
-    {
-        inc++;
-    }
+	while (*(s + len) != '\0')
+		len++;
 
-    return (inc);
+	return (len);
 }
