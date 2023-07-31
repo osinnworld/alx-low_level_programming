@@ -1,1 +1,30 @@
-###0x04. C - More functions, more nested loops
+## List of Programs
+
+     1	0-isupper.c
+     2	0-main.c
+     3	100-prime_factor.c
+     4	101-main.c
+     5	101-print_number.c
+     6	10-main.c
+     7	10-print_triangle.c
+     8	1-isdigit.c
+     9	1-main.c
+    10	2-main.c
+    11	2-mul.c
+    12	3-main.c
+    13	3-print_numbers.c
+    14	4-main.c
+    15	4-print_most_numbers.c
+    16	5-main.c
+    17	5-more_numbers.c
+    18	6-main.c
+    19	6-print_line.c
+    20	7-main.c
+    21	7-print_diagonal.c
+    22	8-main.c
+    23	8-print_square.c
+    24	9-fizz_buzz.c
+    25	delete_files.sh
+    26	_putchar.c
+    27	README.md
+    28	update_readme.sh

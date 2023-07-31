@@ -1,1 +1,29 @@
-#0x05. C - Pointers, arrays and strings
+## List of Programs
+
+     1	0-main.c
+     2	0-reset_to_98.c
+     3	100-atoi.c
+     4	100-main.c
+     5	101-keygen.c
+     6	1-main.c
+     7	1-swap.c
+     8	2-main.c
+     9	2-strlen.c
+    10	3-main.c
+    11	3-puts.c
+    12	4-main.c
+    13	4-print_rev.c
+    14	5-main.c
+    15	5-rev_string.c
+    16	6-main.c
+    17	6-puts2.c
+    18	7-main.c
+    19	7-puts_half.c
+    20	8-main.c
+    21	8-print_array.c
+    22	9-main.c
+    23	9-strcpy.c
+    24	delete_files.sh
+    25	_putchar.c
+    26	README.md
+    27	update_readme.sh

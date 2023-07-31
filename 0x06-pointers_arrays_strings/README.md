@@ -1,1 +1,31 @@
-0x06. C - More pointers, arrays and strings
+## List of Programs
+
+     1	0-main.c
+     2	0-strcat.c
+     3	100-main.c
+     4	100-rot13.c
+     5	101-main.c
+     6	101-print_number.c
+     7	102-magic.c
+     8	103-infinite_add.c
+     9	103-main.c
+    10	104-main.c
+    11	104-print_buffer.c
+    12	1-main.c
+    13	1-strncat.c
+    14	2-main.c
+    15	2-strncpy.c
+    16	3-main.c
+    17	3-strcmp.c
+    18	4-main.c
+    19	4-rev_array.c
+    20	5-main.c
+    21	5-string_toupper.c
+    22	6-cap_string.c
+    23	6-main.c
+    24	7-leet.c
+    25	7-main.c
+    26	delete_files.sh
+    27	_putchar.c
+    28	README.md
+    29	update_readme.sh
