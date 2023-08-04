@@ -40,7 +40,9 @@
     38	6-abs.o
     39	9-strcpy.c
     40	9-strcpy.o
-    41	libmy.a
-    42	main.h
-    43	README.md
-    44	update_readme.sh
+    41	create_static_lib.sh
+    42	liball.a
+    43	libmy.a
+    44	main.h
+    45	README.md
+    46	update_readme.sh
