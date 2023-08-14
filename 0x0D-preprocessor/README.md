@@ -6,9 +6,12 @@
      4	1-main.c
      5	1-pi.h
      6	2-main.c
-     7	a
-     8	b
-     9	c
-    10	cc
-    11	README.md
-    12	update_readme.sh
+     7	3-function_like_macro.h
+     8	3-main.c
+     9	a
+    10	b
+    11	c
+    12	cc
+    13	d
+    14	README.md
+    15	update_readme.sh
