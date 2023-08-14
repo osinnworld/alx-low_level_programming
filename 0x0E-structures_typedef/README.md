@@ -1,12 +1,21 @@
 ## List of Programs
 
      1	0-main.c
-     2	1-main.c
-     3	2-main.c
-     4	3-main.c
-     5	4-main.c
-     6	5-main.c
-     7	a
-     8	dog.h
-     9	README.md
-    10	update_readme.sh
+     2	1-init_dog.c
+     3	1-main.c
+     4	2-main.c
+     5	2-print_dog.c
+     6	3-main.c
+     7	4-main.c
+     8	4-new_dog.c
+     9	5-free_dog.c
+    10	5-main.c
+    11	a
+    12	b
+    13	c
+    14	d
+    15	dog.h
+    16	e
+    17	f
+    18	README.md
+    19	update_readme.sh
