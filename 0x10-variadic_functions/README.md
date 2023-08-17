@@ -5,9 +5,11 @@
      3	1-main.c
      4	1-print_numbers.c
      5	2-main.c
-     6	3-main.c
-     7	a
-     8	b
-     9	README.md
-    10	update_readme.sh
-    11	variadic_functions.h
+     6	2-print_strings.c
+     7	3-main.c
+     8	a
+     9	b
+    10	c
+    11	README.md
+    12	update_readme.sh
+    13	variadic_functions.h
