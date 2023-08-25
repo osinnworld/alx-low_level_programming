@@ -2,28 +2,28 @@
 #include "lists.h"
 
 /**
- * print_list - function
- * @h: parameter
+ * print_list - a function ...
+ * @h: the list
  *
- * Return: 0 or 1
+ * Return: 1 or 0
  */
+
 size_t print_list(const list_t *h)
 {
-	const list_t *pt;
-	int cp = 0;
+	const list_t *ptr;
+	int cpt = 0;
 
 	if (h == NULL)
 		return (0);
-	pt = h;
-	while (pt != NULL)
+	ptr = h;
+	while (ptr != NULL)
 	{
-		if (pt->str != NULL)
-			printf("[%d] %s\n", pt->len, pt->str);
+		if (ptr->str != NULL)
+			printf("[%d] %s\n", ptr->len, ptr->str);
 		else
 			printf("[0] (nil)\n");
-		pt = pt->next;
-		cp++;
+		ptr = ptr->next;
+		cpt++;
 	}
-	return (cp);
+	return (cpt);
 }
-
