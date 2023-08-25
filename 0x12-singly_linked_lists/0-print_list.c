@@ -3,27 +3,27 @@
 
 /**
  * print_list - function
- * @n: parameter
+ * @h: parameter
  *
  * Return: 0 or 1
  */
 size_t print_list(const list_t *h)
 {
 	const list_t *pt;
-	int c = 0;
+	int cp = 0;
 
-	if (n == NULL)
+	if (h == NULL)
 		return (0);
-	pt = n;
-	while (ptr != NULL)
+	pt = h;
+	while (pt != NULL)
 	{
-		if (pt->strg != NULL)
-			printf("[%d] %s\n", pt->len, pt->strg);
+		if (pt->str != NULL)
+			printf("[%d] %s\n", pt->len, pt->str);
 		else
 			printf("[0] (nil)\n");
 		pt = pt->next;
-		c++;
+		cp++;
 	}
-	return (c);
+	return (cp);
 }
 
