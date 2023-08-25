@@ -5,7 +5,7 @@
 
 /**
  * _strlen_recursion - function
- * @s: parameter
+ * @st: parameter
  *
  * Return: Always 0
  */
@@ -32,7 +32,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (n == NULL)
 		return (NULL);
 
-	n ->str = strdup(str);
+	n->str = strdup(str);
 	n->len = _strlen_recursion(str);
 	n->next = NULL;
 
