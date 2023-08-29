@@ -3,10 +3,10 @@
 
 /**
  * get_nodeint_at_index - func
- * @index: parameter
  * @head: parameter
+ * @index: parameter
  *
- * Retrun: num
+ * Return: num
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
