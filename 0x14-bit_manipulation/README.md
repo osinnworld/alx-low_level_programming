@@ -2,20 +2,26 @@
 
      1	0-binary_to_uint.c
      2	0-main.c
-     3	100-main.c
-     4	1-main.c
-     5	1-print_binary.c
-     6	2-get_bit.c
-     7	2-main.c
-     8	3-main.c
-     9	3-set_bit.c
-    10	4-main.c
-    11	5-main.c
-    12	a
-    13	b
-    14	c
-    15	d
-    16	main.h
-    17	_putchar.c
-    18	README.md
-    19	update_readme.sh
+     3	100-get_endianness.c
+     4	100-main.c
+     5	101-password
+     6	1-main.c
+     7	1-print_binary.c
+     8	2-get_bit.c
+     9	2-main.c
+    10	3-main.c
+    11	3-set_bit.c
+    12	4-clear_bit.c
+    13	4-main.c
+    14	5-flip_bits.c
+    15	5-main.c
+    16	a
+    17	b
+    18	c
+    19	d
+    20	e
+    21	f
+    22	main.h
+    23	_putchar.c
+    24	README.md
+    25	update_readme.sh
