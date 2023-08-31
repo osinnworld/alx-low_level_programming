@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_bit - funct 
+ * clear_bit - funct
  * @n: parameter
  * @index: parameter
  *
