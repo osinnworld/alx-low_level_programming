@@ -1,6 +1,6 @@
 #include "main.h"
 
-#define BUFFER_SIZE 9096
+#define BUF_SIZE 9096
 
 /**
  * read_textfile - func
@@ -11,19 +11,25 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buf;
-	ssize_t fd;
-	ssize_t wrt;
-	ssize_t rd;
+	int fd, ret;
+	char buf[BUF_SIZE + 1];
+	size_t cpt = 0;
+
+	if (filename == NULL)
+		return (0);
 
 	fd = open(filename, O_RDONLY);
+
 	if (fd == -1)
 		return (0);
-	buf = malloc(sizeof(char) * letters);
-	rd = read(fd, buf, letters);
-	wrt = write(STDOUT_FILENO, buf, t);
 
-	free(buf);
+	while ((ret = read(fd, buf, letters)))
+	{
+		buf[ret] = '\0';
+		printf("%s", buf);
+		cpt += ret;
+	}
+
 	close(fd);
-	return (w);
+	return (cpt);
 }
