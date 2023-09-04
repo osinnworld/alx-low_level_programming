@@ -1,35 +1,47 @@
 #include "main.h"
 
-#define BUF_SIZE 9096
-
 /**
- * read_textfile - func
- * @filename: list
- * @letters: number
+ * read_textfile - Reads file & prints to POSIX std output.
+ * @filename: The name of the file to read.
+ * @letters: The number of letters to read and print.
  *
- * Return: 1 or 0
+ * Return: The actual number of letters read and printed, or 0 on failure.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, ret;
-	char buf[BUF_SIZE + 1];
-	size_t cpt = 0;
+	char *buf;
 
 	if (filename == NULL)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
-
-	if (fd == -1)
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
 		return (0);
 
-	while ((ret = read(fd, buf, letters)))
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 	{
-		buf[ret] = '\0';
-		printf("%s", buf);
-		cpt += ret;
+		free(buf);
+		return (0);
 	}
 
+	ret = read(fd, buf, letters);
+	if (ret == -1)
+	{
+		free(buf);
+		close(fd);
+		return (0);
+	}
+
+	if (write(STDOUT_FILENO, buf, ret) != ret)
+	{
+		free(buf);
+		close(fd);
+		return (0);
+	}
+
+	free(buf);
 	close(fd);
-	return (cpt);
+	return (ret);
 }
