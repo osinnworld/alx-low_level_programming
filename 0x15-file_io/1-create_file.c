@@ -9,20 +9,20 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int f;
+	int fd;
 
 	if (filename == NULL)
 		return (-1);
 
-	f = open(filename, O_CREAT | O_RDWR, 600);
+	fd = open(filename, O_CREAT | O_RDWR, 600);
 
-	if (f == -1)
+	if (fd == -1)
 		return (-1);
 
 	chmod(filename, 644);
 
 	if (text_content != NULL)
-		write(f, text_content, strlen(text_content));
-	close(f);
+		write(fd, text_content, strlen(text_content));
+	close(fd);
 	return (1);
 }
